@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
-    "np": "^7.1.0"
+    "np": "^7.1.0",
+    "parcel": "^1.12.4"
   },
   "scripts": {
     "start": "parcel index.html",
