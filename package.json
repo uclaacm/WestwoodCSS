@@ -15,6 +15,6 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --out-dir docs --public-url ./ && head -1 docs/main.*.css > style.css"
+    "build": "parcel build index.html --public-url ./ && head -1 dist/main.*.css > style.css && mv dist docs"
   }
 }
