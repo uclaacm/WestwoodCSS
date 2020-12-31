@@ -9,10 +9,11 @@
     "sass": "^1.32.0"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "np": "^7.1.0"
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --out-dir docs --public-url ./"
+    "build": "parcel build index.html --out-dir docs --public-url ./ && head -1 docs/main.*.css > style.css"
   }
 }
