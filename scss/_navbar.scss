@@ -1,0 +1,48 @@
+// main container
+.navbar {
+    background-color: white;
+    height: 90px;
+    box-shadow: 0px 3px 5px #8e8e8e33;
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    // justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
+}
+
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+
+    img {
+        vertical-align: middle;
+        height: 40px;
+    }
+}
+
+// links go on the right (margin-left: auto)
+.navbar-links {
+    display: block;
+    font-family: "Poppins";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    margin-left: auto;
+
+    a {
+        text-decoration: none;
+        color: black;
+        padding-left: 5vw;
+    }
+}
