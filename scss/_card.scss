@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0px 0px;
+}
+.card .card-body {
+    padding: 1.25rem;
+}
