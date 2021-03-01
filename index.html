@@ -90,6 +90,9 @@
 						<li><a href="#forms__action">Action buttons</a></li>
 					</ul>
 				</li>
+				<li>
+					<a href="#modal">Modal</a>
+				</li>
 			</ul>
 		</nav>
 		<main role="main">
@@ -540,6 +543,23 @@
 					</fieldset>
 					<p><a href="#top">[Top]</a></p>
 				</form>
+			</section>
+			<section>
+				<fieldset id="modal">
+					<legend>Modal</legend>
+					<!-- Trigger/Open The Modal -->
+					<button id="myBtn" onclick="window.myModal.style.display = 'block'">Open Modal</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<span class="close" onclick="window.myModal.style.display = 'none'">&times;</span>
+						<h3>Hello</h3>
+						<p>Some text in the Modal..</p>
+					</div>
+				</fieldset>
+				<p><a href="#top">[Top]</a></p>
 			</section>
 		</main>
 		<footer role="contentinfo">
