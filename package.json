@@ -15,6 +15,10 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./ && head -1 dist/main.*.css > style.css && mv dist docs"
+    "build": "parcel build index.html --public-url ./ && head -1 dist/main.*.css > style.css && mv dist docs",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
