@@ -1,105 +1,106 @@
 // main container
 .navbar {
-    background-color: white;
-    height: 90px;
-    box-shadow: 0px 3px 5px #8e8e8e33;
+  box-shadow: 0px 3px 5px #8e8e8e33;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
 
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    // justify-content: space-between;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    
-}
+  background: #fff;
 
-// logo picture
-.navbar-brand {
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
+  // position: relative;
+  display: flex;
+  // flex-wrap: wrap;
+  align-items: center;
+  padding: 0.75rem 2rem;
+
+  // logo picture
+  .navbar-brand {
+    // padding-top: .3125rem;
+    // padding-bottom: .3125rem;
+    // margin-right: 1rem;
     font-size: 1.25rem;
     text-decoration: none;
     white-space: nowrap;
 
     img {
-        vertical-align: middle;
-        height: 40px;
+      vertical-align: middle;
+      height: 40px;
     }
-}
-
-// container for links and dropdown buttons 
-// formats everything onto the right side of the navbar
-.navbar-items {
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  // container for links and dropdown buttons
+  // formats everything onto the right side of the navbar
+  .navbar-items {
     margin-left: auto;
-}
 
-// regular links in navbar
-.navbar-link {
-    display: inline-block;
-    font-family: "Poppins";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-
-    a {
-        text-decoration: none;
-        color: black;
-        padding-left: 5vw;
+    // regular links in navbar
+    .navbar-link {
+      display: inline-block;
+      // font-family: "Poppins";
+      // font-size: 18px;
+      // font-style: normal;
+      // font-weight: 500;
+      // letter-spacing: 0em;
+      a {
+        padding-left: 4vw;
+      }
     }
-}
+    // container for dropdown button
+    .navbar-dropdown {
+      display: inline-block;
+      padding-left: 5vw;
 
-// container for dropdown button
-.navbar-dropdown {
-    display: inline-block;
-    padding-left:  5vw;
+      //   font-family: "Poppins";
+      //   font-size: 18px;
+      //   font-style: normal;
+      //   font-weight: 500;
+      //   letter-spacing: 0em;
+    }
+  }
 
-    font-family: "Poppins";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-}
-
-// actual dropdown button
-.dropdown-button {
+  // actual dropdown button
+  .dropdown-button {
     border: none;
     cursor: pointer;
     background-color: white;
 
-    font-family: "Poppins";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-}
+    padding: 0;
+    // font-family: "Poppins";
+    // font-size: 18px;
+    // font-style: normal;
+    // font-weight: 500;
+    // letter-spacing: 0em;
+  }
 
-// items/links that will show as the dropdown
-.dropdown-items {
+  // items/links that will show as the dropdown
+  .dropdown-items {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    // min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 
     a {
-        text-decoration: none;
-        color: black;
-        display: block;
-        padding: 16px 16px;
+      //   text-decoration: none;
+      //   color: black;
+      display: block;
+      padding: 1em;
     }
-}
+  }
 
-// show the items when hovering over the dropdown
-.navbar-dropdown:hover {
+  // show the items when hovering over the dropdown
+  .navbar-dropdown:hover {
     .dropdown-items {
-        display: block;
+      display: block;
     }
-}
+  }
 
-.dropdown-items a:hover {background-color: #f1f1f1}
+  .dropdown-items a:hover {
+    background-color: #f1f1f1;
+  }
+}
