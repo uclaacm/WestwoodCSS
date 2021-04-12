@@ -1,0 +1,40 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+button {
+    display: table;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 550;
+    color: #2E2E2E;
+    font-size: 0.75rem;
+    text-align: center;
+    border-radius: 30.27px;
+    background-color: #DADADA;
+    width: auto;
+    clear: both;
+    border: none;
+    font-family: poppins;
+}
+
+button:hover {
+    background-color: #3b59ed;
+    color: #ffffff;
+}
+
+button:active {
+    @include transform(translate(0, 3px));
+}
+
+button:disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+
+
