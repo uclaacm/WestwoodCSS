@@ -1,0 +1,95 @@
+button,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select {
+  display: block;
+}
+
+input,
+select,
+button,
+textarea {
+  color: var(--form-text);
+  background-color: var(--background-alt);
+
+  font-family: inherit;
+  font-size: inherit;
+
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+button,
+input {
+  border-radius: 20px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+select,
+button,
+textarea {
+  -webkit-appearance: none;
+}
+
+textarea {
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  padding-right: 30px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 90%;
+  color: white;
+  background: var(--links);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: var(--button-hover);
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px var(--focus);
+}
+
+// input[type='checkbox']:active,
+// input[type='radio']:active,
+// input[type='submit']:active,
+// input[type='button']:active,
+// button:active {
+//   transform: translateY(2px);
+// }
+
+input:disabled,
+select:disabled,
+button:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+::placeholder {
+  color: var(--form-placeholder);
+}

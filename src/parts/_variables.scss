@@ -1,0 +1,22 @@
+:root {
+	--background-body: #fff;
+	--background: #bdbdbd;
+	--background-alt: #ebebeb;
+	--selection: #9e9e9e;
+	--text-main: #4b4b4b;
+	--text-bright: #151515;
+	--text-muted: #999;
+	--links: #1e6cff;
+	--focus: #1e6cffab;
+	--border: #dbdbdb;
+	--code: #000;
+	--animation-duration: 0.1s;
+	--button-hover: #ddd;
+	--scrollbar-thumb: var(--text-muted);
+	--scrollbar-thumb-hover: var(--background);
+	--form-placeholder: #949494;
+	--form-text: #000;
+	--variable: #39a33c;
+	--highlight: #ff0;
+	--select-arrow: svg-load("./assets/select-arrow.svg", fill: #161f27);
+}

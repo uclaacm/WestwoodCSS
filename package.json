@@ -1,24 +1,42 @@
 {
-  "name": "westwood-css",
+  "name": "water.css",
   "version": "1.0.0",
-  "main": "index.html",
-  "license": "MIT",
-  "devDependencies": {
-    "cssnano": "^4.1.0",
-    "node-sass": "^4.11.0",
-    "sass": "^1.32.0"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.0",
-    "np": "^7.1.0",
-    "parcel": "^1.12.4"
-  },
+  "description": "A just-add-css collection of styles to make simple websites just a little nicer.",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./ && head -1 dist/main.*.css > style.css && mv dist docs",
-    "preinstall": "npx npm-force-resolutions"
+    "build": "gulp style",
+    "dev": "gulp watch"
   },
-  "resolutions": {
-    "node-forge": "0.10.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kognise/water.css.git"
+  },
+  "keywords": [
+    "css",
+    "css-framework",
+    "simple",
+    "minimal"
+  ],
+  "author": "Kognise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kognise/water.css/issues"
+  },
+  "homepage": "https://github.com/kognise/water.css",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.3",
+    "chalk": "^2.4.2",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-bytediff": "^1.0.0",
+    "gulp-filter": "^5.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "browserslist": [
+    "defaults AND not android 4.4.3"
+  ]
 }
