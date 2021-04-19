@@ -1,6 +1,6 @@
 # WestwoodCSS
 
-https://cdn.jsdelivr.net/gh/kimeiga/WestwoodCSS@latest/dist/main.min.css
+https://cdn.jsdelivr.net/gh/uclaacm/WestwoodCSS@latest/dist/main.min.css
 
 [![Water.css](logo.svg)](https://watercss.netlify.com/)
 
