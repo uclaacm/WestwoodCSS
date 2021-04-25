@@ -4,8 +4,6 @@ body {
 
   // max-width: 800px;
   // margin: 20px auto;
-  padding: 0 10px;
-
   color: var(--text-main);
   background: var(--background-body);
 
@@ -15,7 +13,9 @@ body {
 button,
 input,
 textarea {
-  transition: background-color var(--animation-duration) linear, border-color var(--animation-duration) linear,
-    color var(--animation-duration) linear, box-shadow var(--animation-duration) linear,
+  transition: background-color var(--animation-duration) linear,
+    border-color var(--animation-duration) linear,
+    color var(--animation-duration) linear,
+    box-shadow var(--animation-duration) linear,
     transform var(--animation-duration) ease;
 }
