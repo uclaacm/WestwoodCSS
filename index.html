@@ -2,395 +2,402 @@
 <html lang="en">
 
 <head prefix="og: http://ogp.me/ns#">
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Westwood CSS</title>
-  <link href="https://watercss.kognise.dev/" rel="canonical" />
-  <meta content="A drop-in collection of CSS styles to make simple websites like this just a little bit nicer."
-    name="description" />
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Westwood CSS</title>
+	<link href="https://watercss.kognise.dev/" rel="canonical" />
+	<meta content="A drop-in collection of CSS styles to make simple websites like this just a little bit nicer."
+		name="description" />
 
-  <link href="./icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
-  <link href="./icons/favicon-16x16.png" id="icon-16" rel="icon" sizes="16x16" type="image/png" />
-  <link href="./icons/favicon-32x32.png" id="icon-32" rel="icon" sizes="32x32" type="image/png" />
-  <link href="./site.webmanifest" rel="manifest" />
-  <link color="#5bbad5" href="./icons/safari-pinned-tab.svg" rel="mask-icon" />
-  <link href="./icons/favicon.ico" id="icon-ico" rel="shortcut icon" />
-  <meta content="Westwood CSS" name="apple-mobile-web-app-title" />
-  <meta content="Westwood CSS" name="application-name" />
-  <meta content="#00aba9" name="msapplication-TileColor" />
-  <meta content="./icons/browserconfig.xml" name="msapplication-config" />
-  <meta content="#ffffff" name="theme-color" />
+	<link href="./icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+	<link href="./icons/favicon-16x16.png" id="icon-16" rel="icon" sizes="16x16" type="image/png" />
+	<link href="./icons/favicon-32x32.png" id="icon-32" rel="icon" sizes="32x32" type="image/png" />
+	<link href="./site.webmanifest" rel="manifest" />
+	<link color="#5bbad5" href="./icons/safari-pinned-tab.svg" rel="mask-icon" />
+	<link href="./icons/favicon.ico" id="icon-ico" rel="shortcut icon" />
+	<meta content="Westwood CSS" name="apple-mobile-web-app-title" />
+	<meta content="Westwood CSS" name="application-name" />
+	<meta content="#00aba9" name="msapplication-TileColor" />
+	<meta content="./icons/browserconfig.xml" name="msapplication-config" />
+	<meta content="#ffffff" name="theme-color" />
 
-  <!-- Startup styles of Westwood CSS, so styles don't have to wait until JS is loaded -->
-  <link as="style" href="./dist/main.min.css" rel="preload" />
-  <link href="./dist/main.min.css" id="js-startup-stylesheet" rel="stylesheet" />
+	<!-- Startup styles of Westwood CSS, so styles don't have to wait until JS is loaded -->
+	<link as="style" href="./dist/main.min.css" rel="preload" />
+	<link href="./dist/main.min.css" id="js-startup-stylesheet" rel="stylesheet" />
 
-  <!-- Dynamic version of Westwood CSS, overwrites startup styles. JavaScript sets & updates href -->
-  <link id="js-stylesheet" rel="stylesheet" />
+	<!-- Dynamic version of Westwood CSS, overwrites startup styles. JavaScript sets & updates href -->
+	<link id="js-stylesheet" rel="stylesheet" />
 
-  <!-- Custom styles for the documentation / version picker -->
-  <link href="style.css" rel="stylesheet" />
+	<!-- Custom styles for the documentation / version picker -->
+	<link href="style.css" rel="stylesheet" />
 
-  <meta content="summary_large_image" name="twitter:card" />
-  <meta content="website" property="og:type" />
-  <meta content="https://watercss.kognise.dev/" property="og:url" />
-  <meta content="Westwood CSS" property="og:title" />
-  <meta content="A drop-in collection of CSS styles to make simple websites like this just a little bit nicer."
-    property="og:description" />
-  <meta content="https://raw.githubusercontent.com/kognise/Westwood CSS/master/assets/logo.png" property="og:image" />
-  <meta content="1154" property="og:image:width" />
-  <meta content="444" property="og:image:height" />
-  <script type="application/ld+json">
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="website" property="og:type" />
+	<meta content="https://watercss.kognise.dev/" property="og:url" />
+	<meta content="Westwood CSS" property="og:title" />
+	<meta content="A drop-in collection of CSS styles to make simple websites like this just a little bit nicer."
+		property="og:description" />
+	<meta content="https://raw.githubusercontent.com/kognise/Westwood CSS/master/assets/logo.png" property="og:image" />
+	<meta content="1154" property="og:image:width" />
+	<meta content="444" property="og:image:height" />
 
-[36mLine: 1[0m
-[31m
-[0m
-[31m
-[0m
-[31m[36mLine: 1[0m
-[0m
-[31m[31m
-[0m
-[31m[0m
-[0m
-[31m[31m
-[0m
-[31m[0m
-[0m
-</script>
+	<script>
+		// eslint-disable-next-line no-useless-escape
+		window.navigator.clipboard || document.write('<script src="https://unpkg.com/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.promise.js"><\/script>')
+	</script>
 
-  <script>
-    // eslint-disable-next-line no-useless-escape
-    window.navigator.clipboard || document.write('<script src="https://unpkg.com/clipboard-polyfill@2.8.6/dist/clipboard-polyfill.promise.js"><\/script>')
-  </script>
-
-  <!-- Use bright favicons when the browser is in dark mode. -->
-  <script type="module">
-    import faviconSwitcher from "https://unpkg.com/favicon-mode-switcher@1.0.4/dist/index.min.mjs"
-    faviconSwitcher([
-      {
-        element: "#icon-ico",
-        href: {
-          dark: "./icons/light-favicon.ico"
-        }
-      }, {
-        element: "#icon-16",
-        href: {
-          dark: "./icons/light-favicon-16x16.png"
-        }
-      }, {
-        element: "#icon-32",
-        href: {
-          dark: "./icons/light-favicon-32x32.png"
-        }
-      }
-    ])
-  </script>
+	<!-- Use bright favicons when the browser is in dark mode. -->
+	<script type="module">
+		import faviconSwitcher from "https://unpkg.com/favicon-mode-switcher@1.0.4/dist/index.min.mjs"
+		faviconSwitcher([
+			{
+				element: "#icon-ico",
+				href: {
+					dark: "./icons/light-favicon.ico"
+				}
+			}, {
+				element: "#icon-16",
+				href: {
+					dark: "./icons/light-favicon-16x16.png"
+				}
+			}, {
+				element: "#icon-32",
+				href: {
+					dark: "./icons/light-favicon-32x32.png"
+				}
+			}
+		])
+	</script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Westwood CSS</h1>
+	<nav class="navbar">
+		<div class="navbar-brand">
+			<a href="/">
+				<img src="https://design.uclaacm.com/assets/logos/design-logo-wordmark-dark-gradient.png" alt="Image alt text">
+			</a>
+		</div>
+		<div class="navbar-items">
+			<div class="navbar-link">
+				<a href="#">link 1</a>
+				<a href="#">link 2</a>
+			</div>
+			<div class="navbar-dropdown">
+				<button class="dropdown-button">Dropdown</button>
+				<div class="dropdown-items">
+					<a href="#">dropdown link 1</a>
+					<a href="#">dropdown link 2</a>
+					<a href="#">dropdown link 3</a>
+					<a href="#">dropdown link 4</a>
+				</div>
+			</div>
+			<div class="navbar-link">
+				<a href="#">link 3 (different parent)</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<h1>Westwood CSS</h1>
 
-    <p>
-      Westwood CSS is a drop-in collection of CSS styles to make simple websites like this just a
-      ittle bit nicer.
-    </p>
-    <p>
-      Now you can write your simple static site with nice semantic html, and Westwood CSS will manage
-      the styling for you.
-    </p>
+		<p>
+			Westwood CSS is a drop-in collection of CSS styles to make simple websites like this just a
+			ittle bit nicer.
+		</p>
+		<p>
+			Now you can write your simple static site with nice semantic html, and Westwood CSS will manage
+			the styling for you.
+		</p>
 
-    <div>
-      <div>
-        <a href="#installation">
-          <b>Get it already!</b>
-        </a>
-        <br />
-        <a href="https://github.com/kognise/Westwood CSS">
-          <b>GitHub</b>
-        </a>
-      </div>
+		<div>
+			<div>
+				<a href="#installation">
+					<b>Get it already!</b>
+				</a>
+				<br />
+				<a href="https://github.com/kognise/Westwood CSS">
+					<b>GitHub</b>
+				</a>
+			</div>
 
-      <a href="https://www.producthunt.com/posts/water-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-water-css"
-        rel="noopener" target="_blank">
-        <img alt="Westwood CSS - Make your tiny website just a little nicer | Product Hunt Embed" height="54px"
-          id="product-hunt"
-          src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=150490&theme=dark&period=daily"
-          style="width: 250px; height: 54px;" width="250px" />
-      </a>
-    </div>
+			<a href="https://www.producthunt.com/posts/water-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-water-css"
+				rel="noopener" target="_blank">
+				<img alt="Westwood CSS - Make your tiny website just a little nicer | Product Hunt Embed" height="54px"
+					id="product-hunt"
+					src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=150490&theme=dark&period=daily"
+					style="width: 250px; height: 54px;" width="250px" />
+			</a>
+		</div>
 
-    <h2>Installation</h2>
-    <div id="installation">
-      <header>
-        <h3 id="link-snippet-headline">
-          Paste this into the
-          <code>&lt;head&gt;</code>
-          of your HTML:
-        </h3>
-        <button id="copy-button" type="button">
-          <span id="copy-button-feedback"></span>
-          Copy to clipboard
-        </button>
-      </header>
+		<h2>Installation</h2>
+		<div id="installation">
+			<header>
+				<h3 id="link-snippet-headline">
+					Paste this into the
+					<code>&lt;head&gt;</code>
+					of your HTML:
+				</h3>
+				<button id="copy-button" type="button">
+					<span id="copy-button-feedback"></span>
+					Copy to clipboard
+				</button>
+			</header>
 
-      <div id="link-snippet-container">
-        <pre
-          id="link-snippet-auto"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/Westwood CSS"></code></pre>
-        <pre hidden
-          id="link-snippet-dark"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/dark.css"></code></pre>
-        <pre hidden
-          id="link-snippet-light"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/light.css"></code></pre>
-      </div>
+			<div id="link-snippet-container">
+				<pre
+					id="link-snippet-auto"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/Westwood CSS"></code></pre>
+				<pre hidden
+					id="link-snippet-dark"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/dark.css"></code></pre>
+				<pre hidden
+					id="link-snippet-light"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/light.css"></code></pre>
+			</div>
 
-      <h3>Options</h3>
-      <form id="theme-form">
-        <input checked id="theme-auto" name="theme" type="radio" value="auto" />
-        <label for="theme-auto">Automatic 🌙 / ☀</label>
+			<h3>Options</h3>
+			<form id="theme-form">
+				<input checked id="theme-auto" name="theme" type="radio" value="auto" />
+				<label for="theme-auto">Automatic 🌙 / ☀</label>
 
-        <input id="theme-dark" name="theme" type="radio" value="dark" />
-        <label for="theme-dark">Dark theme 🌙</label>
+				<input id="theme-dark" name="theme" type="radio" value="dark" />
+				<label for="theme-dark">Dark theme 🌙</label>
 
-        <input id="theme-light" name="theme" type="radio" value="light" />
-        <label for="theme-light">Light theme ☀</label>
-      </form>
+				<input id="theme-light" name="theme" type="radio" value="light" />
+				<label for="theme-light">Light theme ☀</label>
+			</form>
 
-      <table id="version-info">
-        <caption>
-          <h3>Version info</h3>
-        </caption>
+			<table id="version-info">
+				<caption>
+					<h3>Version info</h3>
+				</caption>
 
-        <tbody>
-          <tr>
-            <th scope="row">File</th>
-            <td id="table-file-name"></td>
-          </tr>
+				<tbody>
+					<tr>
+						<th scope="row">File</th>
+						<td id="table-file-name"></td>
+					</tr>
 
-          <tr>
-            <th scope="row">Size (min + gzip)</th>
-            <td id="table-file-size"></td>
-          </tr>
+					<tr>
+						<th scope="row">Size (min + gzip)</th>
+						<td id="table-file-size"></td>
+					</tr>
 
-          <tr>
-            <th scope="row">Theme</th>
-            <td id="table-theme"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+					<tr>
+						<th scope="row">Theme</th>
+						<td id="table-theme"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-    <h2 id="goals">Goals</h2>
-    <ul>
-      <li>Responsive</li>
-      <li>Good code quality</li>
-      <li>Good browser support</li>
-      <li>Small size (&lt; 2kb)</li>
-      <li>Beautiful</li>
-      <li>No classes</li>
-    </ul>
+		<h2 id="goals">Goals</h2>
+		<ul>
+			<li>Responsive</li>
+			<li>Good code quality</li>
+			<li>Good browser support</li>
+			<li>Small size (&lt; 2kb)</li>
+			<li>Beautiful</li>
+			<li>No classes</li>
+		</ul>
 
-    <h2 id="responsive">Is it responsive?</h2>
-    <p>
-      <strong>Heck yeah!</strong>
-      It doesn't include any fancy styles so it's easily mobile
-      responsive. Just add the famous
-      <a href="https://www.w3schools.com/css/css_rwd_viewport.asp">responsive viewport tag</a>
-      and
-      you'll be good to go!
-    </p>
-    <p>In fact, try resizing this page. Everything flows super nicely as you'll see.</p>
+		<h2 id="responsive">Is it responsive?</h2>
+		<p>
+			<strong>Heck yeah!</strong>
+			It doesn't include any fancy styles so it's easily mobile
+			responsive. Just add the famous
+			<a href="https://www.w3schools.com/css/css_rwd_viewport.asp">responsive viewport tag</a>
+			and
+			you'll be good to go!
+		</p>
+		<p>In fact, try resizing this page. Everything flows super nicely as you'll see.</p>
 
-    <h2 id="bookmarklet">Bookmarklet</h2>
-    <p>
-      A bookmarklet is a snippet of JavaScript that sits in your bookmarks bar.
-    </p>
-    <p>
-      The Waterize bookmarklet can be used to make ugly websites more readable by replacing the styles with Westwood
-      CSS. Just drag this link to your bookmarks bar:
-    </p>
-    <strong>
-      <a
-        href="javascript:void%20function(){const%20a=a=%3Edocument.querySelectorAll(a),b=(a,b)=%3EObject.assign(document.createElement(a),b);a(%22link[rel=\%22stylesheet\%22],style%22).forEach(a=%3Ea.remove()),a(%22*%22).forEach(a=%3Ea.style=%22%22),document.head.append(b(%22link%22,{rel:%22stylesheet%22,href:%22//cdn.jsdelivr.net/npm/Westwood CSS%402/out/Westwood CSS%22}),!a(%22meta[name=\%22viewport\%22]%22).length%26%26b(%22meta%22,{name:%22viewport%22,content:%22width=device-width,initial-scale=1.0%22}))}();">
-        Waterize
-      </a>
-    </strong>
+		<h2 id="bookmarklet">Bookmarklet</h2>
+		<p>
+			A bookmarklet is a snippet of JavaScript that sits in your bookmarks bar.
+		</p>
+		<p>
+			The Waterize bookmarklet can be used to make ugly websites more readable by replacing the styles with Westwood
+			CSS. Just drag this link to your bookmarks bar:
+		</p>
+		<strong>
+			<a
+				href="javascript:void%20function(){const%20a=a=%3Edocument.querySelectorAll(a),b=(a,b)=%3EObject.assign(document.createElement(a),b);a(%22link[rel=\%22stylesheet\%22],style%22).forEach(a=%3Ea.remove()),a(%22*%22).forEach(a=%3Ea.style=%22%22),document.head.append(b(%22link%22,{rel:%22stylesheet%22,href:%22//cdn.jsdelivr.net/npm/Westwood CSS%402/out/Westwood CSS%22}),!a(%22meta[name=\%22viewport\%22]%22).length%26%26b(%22meta%22,{name:%22viewport%22,content:%22width=device-width,initial-scale=1.0%22}))}();">
+				Waterize
+			</a>
+		</strong>
 
-    <h2 id="demo">Element demos</h2>
-    <p>This is supposed to be a demo page so we need more elements!</p>
+		<h2 id="demo">Element demos</h2>
+		<p>This is supposed to be a demo page so we need more elements!</p>
 
-    <h3 id="form-elements">Form elements</h3>
-    <form>
-      <label for="email">Email</label>
-      <input id="email" name="email" placeholder="john.doe@gmail.com" type="email" />
+		<h3 id="form-elements">Form elements</h3>
+		<form>
+			<label for="email">Email</label>
+			<input id="email" name="email" placeholder="john.doe@gmail.com" type="email" />
 
-      <label for="id">User id (read only)</label>
-      <input id="id" name="id" readonly value="04D6H89Z" />
+			<label for="id">User id (read only)</label>
+			<input id="id" name="id" readonly value="04D6H89Z" />
 
-      <label for="disabled">Random disabled input</label>
-      <input disabled id="disabled" name="disabled" placeholder="Because why not?" />
+			<label for="disabled">Random disabled input</label>
+			<input disabled id="disabled" name="disabled" placeholder="Because why not?" />
 
-      <label for="about">About me</label>
-      <textarea id="about" name="about" placeholder="I am a textarea..."></textarea>
+			<label for="about">About me</label>
+			<textarea id="about" name="about" placeholder="I am a textarea..."></textarea>
 
-      <label>Choose a Doe:</label>
-      <div>
-        <input checked id="john" name="drone" type="radio" value="john" />
-        <label for="john">John Doe</label>
-      </div>
-      <div>
-        <input checked id="jane" name="drone" type="radio" value="jane" />
-        <label for="jane">Jane Doe</label>
-      </div>
-      <div>
-        <input checked id="johnny" name="drone" type="radio" value="johnny" />
-        <label for="johnny">Johnny Doe</label>
-      </div>
+			<label>Choose a Doe:</label>
+			<div>
+				<input checked id="john" name="drone" type="radio" value="john" />
+				<label for="john">John Doe</label>
+			</div>
+			<div>
+				<input checked id="jane" name="drone" type="radio" value="jane" />
+				<label for="jane">Jane Doe</label>
+			</div>
+			<div>
+				<input checked id="johnny" name="drone" type="radio" value="johnny" />
+				<label for="johnny">Johnny Doe</label>
+			</div>
 
-      <br />
+			<br />
 
-      <input checked id="remember" name="remember" type="checkbox" />
-      <label for="remember">Remember me</label>
+			<input checked id="remember" name="remember" type="checkbox" />
+			<label for="remember">Remember me</label>
 
-      <input type="submit" value="Submit" />
-      <input type="reset" value="Reset" />
-    </form>
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Reset" />
+		</form>
 
-    <h3 id="code">Code</h3>
-    <p>
-      Below is some code, you can copy it with
-      <kbd>Ctrl-C</kbd>. Did you know,
-      <code>alert(1)</code>
-      can show an alert in JavaScript!
-    </p>
-    <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
+		<h3 id="code">Code</h3>
+		<p>
+			Below is some code, you can copy it with
+			<kbd>Ctrl-C</kbd>. Did you know,
+			<code>alert(1)</code>
+			can show an alert in JavaScript!
+		</p>
+		<pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
 
-    <h3 id="other">Other</h3>
-    <p>Here's a horizontal rule and image because I don't know where else to put them.</p>
-    <img alt="Example kitten" src="https://placekitten.com/408/287" />
-    <hr />
+		<h3 id="other">Other</h3>
+		<p>Here's a horizontal rule and image because I don't know where else to put them.</p>
+		<img alt="Example kitten" src="https://placekitten.com/408/287" />
+		<hr />
 
-    <p>And here's a nicely marked up table!</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Godzilla</td>
-          <td>2</td>
-          <td>$299.99</td>
-        </tr>
-        <tr>
-          <td>Mozilla</td>
-          <td>10</td>
-          <td>$100,000.00</td>
-        </tr>
-        <tr>
-          <td>Quesadilla</td>
-          <td>1</td>
-          <td>$2.22</td>
-        </tr>
-      </tbody>
-    </table>
+		<p>And here's a nicely marked up table!</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Godzilla</td>
+					<td>2</td>
+					<td>$299.99</td>
+				</tr>
+				<tr>
+					<td>Mozilla</td>
+					<td>10</td>
+					<td>$100,000.00</td>
+				</tr>
+				<tr>
+					<td>Quesadilla</td>
+					<td>1</td>
+					<td>$2.22</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <details>
-      <summary>Some summary/details can't hurt!</summary>
-      <p>Lorem ipsum dolor sit blah blah.</p>
-    </details>
+		<details>
+			<summary>Some summary/details can't hurt!</summary>
+			<p>Lorem ipsum dolor sit blah blah.</p>
+		</details>
 
-    <p>The dialog (form, and menu) tag</p>
+		<p>The dialog (form, and menu) tag</p>
 
-    <div>
-      <button id="dialog-trigger" type="button">
-        Show me the dialog!
-      </button>
-      <span id="dialog-result"></span>
-    </div>
+		<div>
+			<button id="dialog-trigger" type="button">
+				Show me the dialog!
+			</button>
+			<span id="dialog-result"></span>
+		</div>
 
-    <dialog id="dialog">
-      <header>This is a sample dialog</header>
-      <form method="dialog">
-        <p>What is your favorite pet animal?</p>
-        <menu>
-          <button value="feline">Cats</button>
-          <button value="canine">Dogs</button>
-          <button value="other">Others</button>
-        </menu>
-      </form>
-    </dialog>
+		<dialog id="dialog">
+			<header>This is a sample dialog</header>
+			<form method="dialog">
+				<p>What is your favorite pet animal?</p>
+				<menu>
+					<button value="feline">Cats</button>
+					<button value="canine">Dogs</button>
+					<button value="other">Others</button>
+				</menu>
+			</form>
+		</dialog>
 
-    <h3 id="typography">Typography</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, quis
-      ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit. Duis
-      ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius
-      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu
-      felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui
-      aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora
-      torquent per conubia nostra, per inceptos himenaeos.
-      <strong>This is strong,</strong>
-      this is normal,
-      <b>this is just bold,</b>
-      <em>and this is emphasized!</em>
-      And heck,
-      <a href="/">here</a>'s a link.
-    </p>
+		<h3 id="typography">Typography</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, quis
+			ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit. Duis
+			ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius
+			natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu
+			felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui
+			aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora
+			torquent per conubia nostra, per inceptos himenaeos.
+			<strong>This is strong,</strong>
+			this is normal,
+			<b>this is just bold,</b>
+			<em>and this is emphasized!</em>
+			And heck,
+			<a href="/">here</a>'s a link.
+		</p>
 
-    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-      "The HTML blockquote Element (or HTML Block Quotation Element) indicates that the enclosed
-      text is an extended quotation. Usually, this is rendered visually by indentation (see
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a>
-      for how to change it). A URL for the source of the quotation may be given using the
-      <code>cite</code>
-      attribute, while a text representation of the source can be given using the
-      <code>&lt;cite&gt;</code>
-      cite element."
+		<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+			"The HTML blockquote Element (or HTML Block Quotation Element) indicates that the enclosed
+			text is an extended quotation. Usually, this is rendered visually by indentation (see
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a>
+			for how to change it). A URL for the source of the quotation may be given using the
+			<code>cite</code>
+			attribute, while a text representation of the source can be given using the
+			<code>&lt;cite&gt;</code>
+			cite element."
 
-      <footer>
-        <cite>MDN, "The Block Quotation element"</cite>
-      </footer>
-    </blockquote>
+			<footer>
+				<cite>MDN, "The Block Quotation element"</cite>
+			</footer>
+		</blockquote>
 
-    <ul>
-      <li>Unordered list item 1</li>
-      <li>Unordered list item 2</li>
-      <li>Unordered list item 3</li>
-    </ul>
-    <ol>
-      <li>Ordered list item 1</li>
-      <li>Ordered list item 2</li>
-      <li>Ordered list item 3</li>
-    </ol>
+		<ul>
+			<li>Unordered list item 1</li>
+			<li>Unordered list item 2</li>
+			<li>Unordered list item 3</li>
+		</ul>
+		<ol>
+			<li>Ordered list item 1</li>
+			<li>Ordered list item 2</li>
+			<li>Ordered list item 3</li>
+		</ol>
 
-    <p>Addresses are also styled to be
-      <strong>awesome</strong>!
-    </p>
-    <address>
-      <a href="mailto:john.doe@example.com">john.doe@example.com</a><br />
-      <a href="tel:778-330-2389">778-330-2389</a><br />
-      <a href="sms:666-666-6666">666-666-6666</a><br />
-    </address>
+		<p>Addresses are also styled to be
+			<strong>awesome</strong>!
+		</p>
+		<address>
+			<a href="mailto:john.doe@example.com">john.doe@example.com</a><br />
+			<a href="tel:778-330-2389">778-330-2389</a><br />
+			<a href="sms:666-666-6666">666-666-6666</a><br />
+		</address>
 
-    <br />
+		<br />
 
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
 
-    <footer>
-      <a href="#">Back to top ⬆</a>
-    </footer>
+		<footer>
+			<a href="#">Back to top ⬆</a>
+		</footer>
 
-    <script defer src="script.js"></script>
-  </div>
+		<script defer src="script.js"></script>
+	</div>
 </body>
 
 </html>
