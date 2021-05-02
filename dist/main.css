@@ -239,6 +239,21 @@ textarea:disabled {
   color: var(--form-placeholder);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 4rem;
+  margin: 0;
+}
+
 /* CONTAINERS */
 .container {
   margin: 20px auto;
@@ -262,9 +277,9 @@ textarea:disabled {
 /* HERO */
 /* CHANGE background-image & background-color ACCORDINGLY*/
 .hero-image {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/tDTb9SG.png); */
-  background-color: white;
-  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.imgur.com/tDTb9SG.png);
+  background-color: #fff523;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -277,6 +292,7 @@ textarea:disabled {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }
 
 a {
