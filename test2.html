@@ -106,302 +106,151 @@
     </div>
 
 	<div class="container">
-        <div class="tab">
-            <h1>Components&emsp;</h1>
-            <div class="tab-items">
-                <a href="#">Grid</a>
-                <a href="#">Columns</a>
-                <a href="#">Buttons</a>
-                <a href="#">Forms</a>
-                <a href="#">Nav</a>
-                <a href="#">Card</a>
-                <a href="#">Table</a>
-                <a href="#">Text</a>
-            </div>
-        </div>
+        <h1>Variables</h1>
+        <p>Here’s the basic variables in Westwood CSS:</p>
+        <pre><code>:root {
+    --background-body: #fff;
+    --background: #efefef;
+    --background-alt: #f7f7f7;
+    --selection: #9e9e9e;
+    --text-main: #363636;
+    --text-bright: #000;
+    --text-muted: #999;
+    --links: #0076d1;
+    --focus: #0096bfab;
+    --border: #dbdbdb;
+    --code: #000;
+    --animation-duration: 0.1s;
+    --button-hover: #ddd;
+    --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
+    --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
+    --form-placeholder: #949494;
+    --form-text: #000;
+    --variable: #39a33c;
+    --highlight: #ff0;
+    --select-arrow: svg-load("./assets/select-arrow.svg", fill: #161f27);
+}</code></pre>
+        <p>Override variables by adding them to your :root selector.</p>
+        <pre><code>:root {
+    --background-body: #000;
+    --background: #101010;
+    --background-alt: #080808;
+}
+
+/* Other styles..... */</code></pre>
+        
         <br>
 
-        <p>
-			Now you can write your simple static site with nice semantic html, and Westwood CSS will manage
-			the styling for you.
-		</p>
+        <div class="tab">
+            <h1>Components&emsp;</h1>
+            <div class="tab-items"> 
+                <a href="#grid">Grid</a>
+                <a href="#columns">Columns</a>
+                <a href="#buttons">Buttons</a>
+                <a href="#forms">Forms</a>
+                <a href="#navigation">Nav</a>
+                <a href="#card">Card</a>
+                <a href="#table">Table</a>
+				<a href="#modal">Modal</a>
+                <a href="#typography">Typography</a>
+            </div>
+        </div>
 
-		<div>
-			<div>
-				<a href="#installation">
-					<b>Get it already!</b>
-				</a>
-				<br />
-				<a href="https://github.com/kognise/Westwood CSS">
-					<b>GitHub</b>
-				</a>
-			</div>
+        <br>
 
-			<a href="https://www.producthunt.com/posts/water-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-water-css"
-				rel="noopener" target="_blank">
-				<img alt="Westwood CSS - Make your tiny website just a little nicer | Product Hunt Embed" height="54px"
-					id="product-hunt"
-					src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=150490&theme=dark&period=daily"
-					style="width: 250px; height: 54px;" width="250px" />
-			</a>
-		</div>
+		<h1 id="grid">Grid</h1> 
+		<p>* grid description *</p>
+		
+		<br>
 
-		<h2>Installation</h2>
-		<div id="installation">
-			<header>
-				<h3 id="link-snippet-headline">
-					Paste this into the
-					<code>&lt;head&gt;</code>
-					of your HTML:
-				</h3>
-				<button id="copy-button" type="button">
-					<span id="copy-button-feedback"></span>
-					Copy to clipboard
-				</button>
-			</header>
+		<h1 id="columns">Columns</h1> 
+		<p>* columns description *</p>
+		
+		<br>
+		
+		<h1 id="buttons">Button</h1> 
+		<p>* buttons description *</p>
+		
+		<br>
+        
+        <h1 id="forms">Form Elements</h1>
+		<h2>Input Fields</h2>
+        <p>Here’s the basic variables in Westwood CSS:</p>
+        <label for="input__text">Text Input</label>
+        <input id="input__text" type="text" placeholder="Text Input">
+        <label for="input__password">Password</label>
+        <input id="input__password" type="password" placeholder="Type your Password">
+        
 
-			<div id="link-snippet-container">
-				<pre
-					id="link-snippet-auto"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/Westwood CSS"></code></pre>
-				<pre hidden
-					id="link-snippet-dark"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/dark.css"></code></pre>
-				<pre hidden
-					id="link-snippet-light"><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/Westwood CSS@2/out/light.css"></code></pre>
-			</div>
+		<h1 id="navigation">Nav</h1> 
+		<p>* navigation description *</p>
+		
+		<br>
 
-			<h3>Options</h3>
-			<form id="theme-form">
-				<input checked id="theme-auto" name="theme" type="radio" value="auto" />
-				<label for="theme-auto">Automatic 🌙 / ☀</label>
+		<h1 id="card">Card</h1> 
+		<p>* card description *</p>
+		
+		<br>
+		
+		<h1 id="table">Table</h1>
+		<p>* table description *</p>
 
-				<input id="theme-dark" name="theme" type="radio" value="dark" />
-				<label for="theme-dark">Dark theme 🌙</label>
+		<br>
 
-				<input id="theme-light" name="theme" type="radio" value="light" />
-				<label for="theme-light">Light theme ☀</label>
-			</form>
+        <table>
+            <caption>Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>Table Heading 1</th>
+                    <th>Table Heading 2</th>
+                    <th>Table Heading 3</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Table Footer 1</th>
+                    <th>Table Footer 2</th>
+                    <th>Table Footer 3</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Table Cell 1</td>
+                    <td>Table Cell 2</td>
+                    <td>Table Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Table Cell 1</td>
+                    <td>Table Cell 2</td>
+                    <td>Table Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Table Cell 1</td>
+                    <td>Table Cell 2</td>
+                    <td>Table Cell 3</td>
 
-			<table id="version-info">
-				<caption>
-					<h3>Version info</h3>
-				</caption>
+                </tr>
+                <tr>
+                    <td>Table Cell 1</td>
+                    <td>Table Cell 2</td>
+                    <td>Table Cell 3</td>
+                </tr>
+            </tbody>
+        </table>
 
-				<tbody>
-					<tr>
-						<th scope="row">File</th>
-						<td id="table-file-name"></td>
-					</tr>
+        <pre><code>
 
-					<tr>
-						<th scope="row">Size (min + gzip)</th>
-						<td id="table-file-size"></td>
-					</tr>
+        </code></pre>
 
-					<tr>
-						<th scope="row">Theme</th>
-						<td id="table-theme"></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		<h1 id="modal">Modal</h1> 
+		<p>* modal description *</p>
+		
+		<br>
+		
+		<h1 id="typography">Typography</h1>
+		<p>Type is all set with the rems, so font-sizes and spacial relationships can be responsively sized based on a single <html> font-size property.</p>
 
-		<h2 id="goals">Goals</h2>
-		<ul>
-			<li>Responsive</li>
-			<li>Good code quality</li>
-			<li>Good browser support</li>
-			<li>Small size (&lt; 2kb)</li>
-			<li>Beautiful</li>
-			<li>No classes</li>
-		</ul>
-
-		<h2 id="responsive">Is it responsive?</h2>
-		<p>
-			<strong>Heck yeah!</strong>
-			It doesn't include any fancy styles so it's easily mobile
-			responsive. Just add the famous
-			<a href="https://www.w3schools.com/css/css_rwd_viewport.asp">responsive viewport tag</a>
-			and
-			you'll be good to go!
-		</p>
-		<p>In fact, try resizing this page. Everything flows super nicely as you'll see.</p>
-
-		<h2 id="bookmarklet">Bookmarklet</h2>
-		<p>
-			A bookmarklet is a snippet of JavaScript that sits in your bookmarks bar.
-		</p>
-		<p>
-			The Waterize bookmarklet can be used to make ugly websites more readable by replacing the styles with Westwood
-			CSS. Just drag this link to your bookmarks bar:
-		</p>
-		<strong>
-			<a
-				href="javascript:void%20function(){const%20a=a=%3Edocument.querySelectorAll(a),b=(a,b)=%3EObject.assign(document.createElement(a),b);a(%22link[rel=\%22stylesheet\%22],style%22).forEach(a=%3Ea.remove()),a(%22*%22).forEach(a=%3Ea.style=%22%22),document.head.append(b(%22link%22,{rel:%22stylesheet%22,href:%22//cdn.jsdelivr.net/npm/Westwood CSS%402/out/Westwood CSS%22}),!a(%22meta[name=\%22viewport\%22]%22).length%26%26b(%22meta%22,{name:%22viewport%22,content:%22width=device-width,initial-scale=1.0%22}))}();">
-				Waterize
-			</a>
-		</strong>
-
-		<h2 id="demo">Element demos</h2>
-		<p>This is supposed to be a demo page so we need more elements!</p>
-
-		<h3 id="form-elements">Form elements</h3>
-		<form>
-			<label for="email">Email</label>
-			<input id="email" name="email" placeholder="john.doe@gmail.com" type="email" />
-
-			<label for="id">User id (read only)</label>
-			<input id="id" name="id" readonly value="04D6H89Z" />
-
-			<label for="disabled">Random disabled input</label>
-			<input disabled id="disabled" name="disabled" placeholder="Because why not?" />
-
-			<label for="about">About me</label>
-			<textarea id="about" name="about" placeholder="I am a textarea..."></textarea>
-
-			<label>Choose a Doe:</label>
-			<div>
-				<input checked id="john" name="drone" type="radio" value="john" />
-				<label for="john">John Doe</label>
-			</div>
-			<div>
-				<input checked id="jane" name="drone" type="radio" value="jane" />
-				<label for="jane">Jane Doe</label>
-			</div>
-			<div>
-				<input checked id="johnny" name="drone" type="radio" value="johnny" />
-				<label for="johnny">Johnny Doe</label>
-			</div>
-
-			<br />
-
-			<input checked id="remember" name="remember" type="checkbox" />
-			<label for="remember">Remember me</label>
-
-			<input type="submit" value="Submit" />
-			<input type="reset" value="Reset" />
-		</form>
-
-		<h3 id="code">Code</h3>
-		<p>
-			Below is some code, you can copy it with
-			<kbd>Ctrl-C</kbd>. Did you know,
-			<code>alert(1)</code>
-			can show an alert in JavaScript!
-		</p>
-		<pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
-
-		<h3 id="other">Other</h3>
-		<p>Here's a horizontal rule and image because I don't know where else to put them.</p>
-		<img alt="Example kitten" src="https://placekitten.com/408/287" />
-		<hr />
-
-		<p>And here's a nicely marked up table!</p>
-		<table>
-			<thead>
-				<tr>
-					<th>Name</th>
-					<th>Quantity</th>
-					<th>Price</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Godzilla</td>
-					<td>2</td>
-					<td>$299.99</td>
-				</tr>
-				<tr>
-					<td>Mozilla</td>
-					<td>10</td>
-					<td>$100,000.00</td>
-				</tr>
-				<tr>
-					<td>Quesadilla</td>
-					<td>1</td>
-					<td>$2.22</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<details>
-			<summary>Some summary/details can't hurt!</summary>
-			<p>Lorem ipsum dolor sit blah blah.</p>
-		</details>
-
-		<p>The dialog (form, and menu) tag</p>
-
-		<div>
-			<button id="dialog-trigger" type="button">
-				Show me the dialog!
-			</button>
-			<span id="dialog-result"></span>
-		</div>
-
-		<dialog id="dialog">
-			<header>This is a sample dialog</header>
-			<form method="dialog">
-				<p>What is your favorite pet animal?</p>
-				<menu>
-					<button value="feline">Cats</button>
-					<button value="canine">Dogs</button>
-					<button value="other">Others</button>
-				</menu>
-			</form>
-		</dialog>
-
-		<h3 id="typography">Typography</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum hendrerit velit, quis
-			ullamcorper sem congue ac. Quisque id magna rhoncus, sodales massa vel, vestibulum elit. Duis
-			ornare accumsan egestas. Proin maximus lacus interdum leo molestie convallis. Orci varius
-			natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut iaculis risus eu
-			felis feugiat, eu mollis neque elementum. Donec interdum, nisl id dignissim iaculis, felis dui
-			aliquet dui, non fermentum velit lectus ac quam. Class aptent taciti sociosqu ad litora
-			torquent per conubia nostra, per inceptos himenaeos.
-			<strong>This is strong,</strong>
-			this is normal,
-			<b>this is just bold,</b>
-			<em>and this is emphasized!</em>
-			And heck,
-			<a href="/">here</a>'s a link.
-		</p>
-
-		<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-			"The HTML blockquote Element (or HTML Block Quotation Element) indicates that the enclosed
-			text is an extended quotation. Usually, this is rendered visually by indentation (see
-			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes">Notes</a>
-			for how to change it). A URL for the source of the quotation may be given using the
-			<code>cite</code>
-			attribute, while a text representation of the source can be given using the
-			<code>&lt;cite&gt;</code>
-			cite element."
-
-			<footer>
-				<cite>MDN, "The Block Quotation element"</cite>
-			</footer>
-		</blockquote>
-
-		<ul>
-			<li>Unordered list item 1</li>
-			<li>Unordered list item 2</li>
-			<li>Unordered list item 3</li>
-		</ul>
-		<ol>
-			<li>Ordered list item 1</li>
-			<li>Ordered list item 2</li>
-			<li>Ordered list item 3</li>
-		</ol>
-
-		<p>Addresses are also styled to be
-			<strong>awesome</strong>!
-		</p>
-		<address>
-			<a href="mailto:john.doe@example.com">john.doe@example.com</a><br />
-			<a href="tel:778-330-2389">778-330-2389</a><br />
-			<a href="sms:666-666-6666">666-666-6666</a><br />
-		</address>
-
-		<br />
+		<br>
 
 		<h1>Heading 1</h1>
 		<h2>Heading 2</h2>
@@ -409,6 +258,16 @@
 		<h4>Heading 4</h4>
 		<h5>Heading 5</h5>
 		<h6>Heading 6</h6>
+
+		<pre><code>
+&lt;!-- Standard Headings --&gt;
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;h2&gt;Heading&lt;/h2&gt;
+&lt;h3&gt;Heading&lt;/h3&gt;
+&lt;h4&gt;Heading&lt;/h4&gt;
+&lt;h5&gt;Heading&lt;/h5&gt;
+&lt;h6&gt;Heading&lt;/h6&gt;
+		</code></pre>
 
 		<footer>
 			<a href="#">Back to top ⬆</a>
