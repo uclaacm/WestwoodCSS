@@ -475,6 +475,36 @@ html {
   background-color: #f1f1f1;
 }
 
+.tab {
+  display: flex;
+  align-items: center;
+}
+
+.tab-items {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.tab a {
+  padding: 0.2rem 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.tab h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 0;
+}
+
 table {
   width: 100%;
   margin-bottom: 1rem;
