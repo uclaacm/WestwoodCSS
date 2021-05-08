@@ -464,6 +464,7 @@ html {
   border: none;
   cursor: pointer;
   background-color: white;
+  color: black;
   font-family: "Poppins";
   font-size: 18px;
   font-style: normal;
@@ -482,8 +483,8 @@ html {
 
 .dropdown-items a {
   text-decoration: none;
-  color: black;
   display: block;
+  color: inherit;
   padding: 16px 16px;
 }
 
